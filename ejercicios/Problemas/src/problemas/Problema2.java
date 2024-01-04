@@ -25,11 +25,11 @@ public class Problema2 {
         int X;
 
         System.out.println("Ingrese 1 para obtener AreaCuadrado");
-        C = entreada nextLine();
+        C = entreada.nextLine();
         System.out.println("Ingrese 2 para obtener AreaTriangulo");
-        T = entreada nextLine();
+        T = entreada.nextLine();
         System.out.println("Ingrese 3 para obtener AreaRectangulo");
-        R = entreada nextLine();
+        R = entreada.nextLine();
         if (x == 1) {
             C;
         } else {
