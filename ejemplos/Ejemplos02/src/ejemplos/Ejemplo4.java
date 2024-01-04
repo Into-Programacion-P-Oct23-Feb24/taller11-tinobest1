@@ -24,10 +24,10 @@ public class Ejemplo4 {
             System.out.printf("Datos ingresado: %d\n", informacion[i]);
         }
     }
-    
-    public static int[] obtenerDatos(int numero){
+
+    public static int[] obtenerDatos(int numero) {
         Scanner entrada = new Scanner(System.in);
-        int [] arregloResultante = new int[numero];
+        int[] arregloResultante = new int[numero];
         int valor;
         for (int i = 0; i < numero; i++) {
             System.out.println("Ingrese valor");
@@ -36,5 +36,5 @@ public class Ejemplo4 {
         }
         return arregloResultante;
     }
-    
+
 }

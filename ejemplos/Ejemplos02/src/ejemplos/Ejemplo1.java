@@ -34,11 +34,10 @@ public class Ejemplo1 {
     }
     
     public static double obtenerPromedioDatos(int [] datos){
-        int suma = 0;
+        int suma = obtenerSumaDatos(datos);
         double promedio;
-        for (int i = 0; i < datos.length; i++) {
-            suma = suma + datos[i];
-        }
+       
+        
         promedio = (double)suma/datos.length;
         return promedio;
     }

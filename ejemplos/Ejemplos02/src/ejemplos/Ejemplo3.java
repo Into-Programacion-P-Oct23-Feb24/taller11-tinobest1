@@ -20,21 +20,32 @@ public class Ejemplo3 {
         // 1    (0, 0)        2     (0, 1) *      3 (0, 2) *
         // 10   (1, 0)        20    (1, 1)      30 (1, 2) *
         // 100  (2, 0)       200    (2, 1)     300 (2, 2) 
-        
-        // int[] informacion2 = {10, 20, 30};
-        presentarDiagonal(informacion);
+
+        int[] informacion2 = {10, 20, 30};
+        presentarNumerosPares(informacion);
     }
-    
-    public static void presentarDiagonal(int [][] datos){
+
+    public static void presentarNumerosPares(int[][] informacion) {
         String cadena = "";
-        for (int i = 0; i < datos.length; i++) {
-            for (int j = 0; j < datos[i].length; j++) {
-                if(i<j){
-                    cadena = String.format("%s%s\t", cadena, datos[i][j]);
+        for (int i = 0; i < informacion.length; i++) {
+            for (int j = 0; j < informacion[i].length; j++) {
+                if (informacion[i] % 2 == 0) {
+                    
+
+                    cadena = String.format("%s%s\t",
+                            cadena,
+                            informacion[i][j]);
                 }
             }
+            for (int i = 0; i < informacion.length; i++) {
+                for (int j = 0; j < informacion[i].length; j++) {
+                    if(informacion[i] % 2==0){
+                       
+                        
+                    }
+                }
+            }
+            System.out.println(cadena+"\n");
         }
-        System.out.println(cadena);
     }
-    
 }
