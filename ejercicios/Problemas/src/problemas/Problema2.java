@@ -18,31 +18,56 @@ public class Problema2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner entrada = new Scanner(System.in);
-        String C;
-        String T;
-        String R;
-        int X;
-
-        System.out.println("Ingrese 1 para obtener AreaCuadrado");
-        C = entreada.nextLine();
-        System.out.println("Ingrese 2 para obtener AreaTriangulo");
-        T = entreada.nextLine();
-        System.out.println("Ingrese 3 para obtener AreaRectangulo");
-        R = entreada.nextLine();
-        if (x == 1) {
-            C;
-        } else {
-            (x == 2)
-            {
-                T;
-            }else {
-                        (x == 3)
-                    }else {
-                            System.out.println("Dato no valido");
-                            }
+       int opcion;
+        System.out.println("Escriba la opcion que desea utilizar para obtener "
+                + "el area\n1.Cuadrado\n2.Triangulo\n3.Rectangulo\n");
+        opcion = entrada.nextInt();
+        if (opcion == 1) {
+            obtenerAreaCuadrado();
+        }else if (opcion == 2) {
+            obtenerAreaTriangulo();
+        }else if (opcion == 3) {
+            obtenerAreaRectangulo();
         }
-        
+    }
+
+    public static void obtenerAreaCuadrado() {
+        Scanner entrada = new Scanner(System.in);
+        double lado;
+        double area;
+        System.out.println("Ingrese el lado del cuadrado");
+        lado = entrada.nextDouble();
+        area = lado * lado * lado * lado;
+        System.out.printf("El area es:%.2f\n", area);
+
+    }
+
+    public static void obtenerAreaTriangulo() {
+        Scanner entrada = new Scanner(System.in);
+        double base;
+        double altura;
+        double area;
+        System.out.println("Ingrese la base");
+        base = entrada.nextDouble();
+        System.out.println("Ingrese la altura");
+        altura = entrada.nextDouble();
+        area = base * altura / 2;
+        System.out.printf("El area es:%.2f\n", area);
+
+    }
+
+    public static void obtenerAreaRectangulo() {
+        Scanner entrada = new Scanner(System.in);
+        double base;
+        double altura;
+        double area;
+        System.out.println("Ingrese la base");
+        base = entrada.nextDouble();
+        System.out.println("Ingrese la altura");
+        altura = entrada.nextDouble();
+        area = base * altura;
+        System.out.printf("El area es:%.2f\n", area);
+
     }
 
 }
